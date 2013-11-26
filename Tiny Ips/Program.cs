@@ -37,8 +37,6 @@ namespace TinyIps
                 switch(command)
                 {
                     case "apply":
-                    case "a":
-                        
 
                         if (args.Length > 2)
                         {
@@ -67,7 +65,6 @@ namespace TinyIps
 
                         return;
                     case "create":
-                    case "c":
 
                         if (args.Length == 4)
                         {
@@ -103,8 +100,8 @@ namespace TinyIps
             Console.WriteLine("");
 
             Console.WriteLine("Usage:");
-            Console.WriteLine("tinyips apply|a <patch> <target> [<output>]");
-            Console.WriteLine("tinyips create|c <original> <modified> <output>");
+            Console.WriteLine("tinyips apply <patch> <target> [<output>]");
+            Console.WriteLine("tinyips create <original> <modified> <output>");
             // Console.WriteLine(System.Reflection.Assembly.GetExecutingAssembly().get)
         }
     }
