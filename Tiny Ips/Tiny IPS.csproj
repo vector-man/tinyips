@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LibIPS.NET">
-      <HintPath>..\..\..\..\Visual Studio 2012\Projects\LibIPS.NET\LibIPS.NET\bin\Debug\LibIPS.NET.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
