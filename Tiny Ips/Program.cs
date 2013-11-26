@@ -16,7 +16,7 @@ namespace TinyIps
             try
             {
 
-                string command = string.Empty;
+                string option = string.Empty;
 
                 string patch = string.Empty;
                 string target = string.Empty;
@@ -32,9 +32,9 @@ namespace TinyIps
                     return;
                 }
 
-                command = args[0];
+                option = args[0];
              
-                switch(command)
+                switch(option)
                 {
                     case "apply":
 
