@@ -38,32 +38,34 @@ namespace TinyIps
                 {
                     case "apply":
 
-                        if (args.Length > 2)
+                        if (args.Length >= 3)
                         {
                             patch = args[1];
                             target = args[2];
+
+
+                            if (args.Length == 4)
+                            {
+                                output = args[3];
+                            }
+
+                            if (output == string.Empty)
+                            {
+                                output = target;
+                            }
+
+                            Patcher patcher = new Patcher();
+                            patcher.Patch(patch, target, output);
+
+                            return;
                         }
                         else
                         {
                             Console.WriteLine("Values must be supplied for option apply.");
-                            break;
                         }
 
-                        if(args.Length > 3) 
-                        {
-                            output = args[3];
-                        }
-
-                        if (output == string.Empty)
-                        {
-                            output = target;
-                        }
-
-                        Patcher patcher = new Patcher();
-
-                        patcher.Patch(patch, target, output);
-
-                        return;
+                        break;
+                                             
                     case "create":
 
                         if (args.Length == 4)
@@ -74,6 +76,7 @@ namespace TinyIps
 
                             Creator creator = new Creator();
                             creator.Create(original, modified, output);
+
                             return;
                         }
                         else
