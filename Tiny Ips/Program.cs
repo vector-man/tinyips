@@ -104,13 +104,10 @@ namespace TinyIps
             var versionInfo = FileVersionInfo.GetVersionInfo(Assembly.GetEntryAssembly().Location);
             Console.WriteLine("{0} {1}", versionInfo.ProductName, versionInfo.ProductVersion.ToString());
             Console.WriteLine("{0}", versionInfo.LegalCopyright);
-
-            Console.WriteLine("");
             Console.WriteLine("");
         }
         static void PrintUsage()
         {
-
             Console.WriteLine("");
             Console.WriteLine("Usage:");
             Console.WriteLine("tinyips apply <patch> <target> [<output>]");
