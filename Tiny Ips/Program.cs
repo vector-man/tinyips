@@ -111,6 +111,7 @@ namespace TinyIps
         static void PrintUsage()
         {
 
+            Console.WriteLine("");
             Console.WriteLine("Usage:");
             Console.WriteLine("tinyips apply <patch> <target> [<output>]");
             Console.WriteLine("tinyips create <original> <modified> <output>");
