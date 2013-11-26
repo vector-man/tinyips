@@ -45,16 +45,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Libips.Net\Creator.cs" />
+    <Compile Include="Libips.Net\Exceptions\Ips16MegabytesException.cs" />
+    <Compile Include="Libips.Net\Exceptions\IpsIdenticalException.cs" />
+    <Compile Include="Libips.Net\Exceptions\IpsInvalidException.cs" />
+    <Compile Include="Libips.Net\Exceptions\IpsNotThisException.cs" />
+    <Compile Include="Libips.Net\Exceptions\IpsScrambledException.cs" />
+    <Compile Include="Libips.Net\Patcher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Libips.Net\Studier.cs" />
+    <Compile Include="Libips.Net\Utils\Reader.cs" />
+    <Compile Include="Libips.Net\Utils\Writer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="README.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
