@@ -14,13 +14,13 @@ How to Use
 ==========
 To apply Patches:
 
-Usage: apply <patch> <target> [<output>]
+    Usage: apply <patch> <target> [<output>]
 
 Start by typing 'apply' (without quotes), followed by the patche's full path, then the target file's full path (the file you wish to patch). An output file path can be optionally specified if you wish to patch to a copy of the target file instead.
 
 To create patches:
 
-Usage: create <original> <modified> <output>
+    Usage: create <original> <modified> <output>
 
 Start by typing 'create' (without quotes), followed by the original (unaltered) file's full path, the modified (altered) file's full path, and the output file's (the IPS file you wish to create) full path.
 
