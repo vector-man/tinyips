@@ -47,6 +47,7 @@ namespace TinyIps
                         {
                             PrintUsage();
                             return;
+                            Console.WriteLine("Values must be supplied for option apply.");
                         }
 
                         if(args.Length > 3) 
@@ -76,6 +77,7 @@ namespace TinyIps
                         {
                             PrintUsage();
                             return;
+                            Console.WriteLine("Values must be supplied for option create.");
                         }
                         Creator creator = new Creator();
                         creator.Create(original, modified, output);
