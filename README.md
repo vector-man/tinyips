@@ -1,12 +1,11 @@
 About tinyIPS
 =============
-
-tinyIPS is a lightweight, cross platform IPS (International Patching System) patcher and creator. It runs in the command-line.
+tinyIPS is a lightweight, cross-platform command-line IPS (International Patching System) patcher and creator.
 
 
 About LibIPS.NET
 ================
-tinyIPS uses LibIPS.NET. LibIPS.NET is a C# implementation of 'libips', a library for 'International Patching System' (IPS) patches. It is based on the source code of 'flips,' that was originally created by Alcaro. You can read more about his version on this forum: http://www.smwcentral.net/?p=viewthread&t=61289
+tinyIPS uses LibIPS.NET, a .NET library for 'International Patching System' (IPS) patches. It is based on the source code of 'flips,' that was originally created by Alcaro. You can read more about his version on this forum: http://www.smwcentral.net/?p=viewthread&t=61289
 
 LibIPS.NET's project page is located here: https://github.com/vector-man/LibIPS.NET (Please contribute changes to the library on this page.)
 
@@ -16,7 +15,7 @@ To apply Patches:
 
     Usage: apply <patch> <target> [<output>]
 
-Start by typing 'apply' (without quotes), followed by the patche's full path, then the target file's full path (the file you wish to patch). An output file path can be optionally specified if you wish to patch to a copy of the target file instead.
+Start by typing 'apply' (without quotes), followed by the patch's full path, then the target file's full path (the file you wish to patch). An output file path can be optionally specified if you wish to patch to a copy of the target file instead.
 
 To create patches:
 
