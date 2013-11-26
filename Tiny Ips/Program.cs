@@ -80,6 +80,9 @@ namespace TinyIps
                         Creator creator = new Creator();
                         creator.Create(original, modified, output);
                         return;
+                    default:
+                        Console.WriteLine("Bad option {0}.", option);
+                        break;
                 }
                 PrintUsage();
                 return;
