@@ -12,6 +12,8 @@ namespace TinyIps
     {
         static void Main(string[] args)
         {
+            PrintCopyright();
+
             Console.InputEncoding = Encoding.UTF8;
             try
             {
@@ -97,7 +99,7 @@ namespace TinyIps
             }
         }
 
-        static void PrintUsage()
+        static void PrintCopyright()
         {
             var versionInfo = FileVersionInfo.GetVersionInfo(Assembly.GetEntryAssembly().Location);
             Console.WriteLine("{0} {1}", versionInfo.ProductName, versionInfo.ProductVersion.ToString());
@@ -105,6 +107,9 @@ namespace TinyIps
 
             Console.WriteLine("");
             Console.WriteLine("");
+        }
+        static void PrintUsage()
+        {
 
             Console.WriteLine("Usage:");
             Console.WriteLine("tinyips apply <patch> <target> [<output>]");
