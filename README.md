@@ -36,4 +36,4 @@ LibIPS.NET is licensed under the GNU Lesser General Public License, version 3.0 
 
 Thanks
 ======
-I want to thank Alcaro for creating 'libips,' a library 'LibIPS.NET' is heavily based on. Whitout him, tinyIPS would not exist.
+I want to thank Alcaro for creating 'libips,' a library 'LibIPS.NET' is heavily based on. Without him, tinyIPS would not exist.
