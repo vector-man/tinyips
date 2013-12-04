@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("tinyIPS")]
-[assembly: AssemblyCopyright("Copyright {c}  2013 CodeIsle.com. Uses the library LibIPS.NET, licensed under the GNU Lesser General Public License, version 3.0 or higher. Copyright (c) 2013 CodeIsle.com, Copyright (c) 2012 Alcaro.")]
+[assembly: AssemblyCopyright("Copyright {c} 2013 CodeIsle.com. Modification of Flips Copyright (c) 2012 Alcaro. Licensed under the GNU Lesser General Public License, version 3.0 or higher.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
