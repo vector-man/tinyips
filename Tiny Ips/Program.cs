@@ -119,7 +119,7 @@ namespace TinyIps
         static void PrintCopyright()
         {
             var versionInfo = FileVersionInfo.GetVersionInfo(Assembly.GetEntryAssembly().Location);
-            Console.WriteLine("{0} {1}", versionInfo.ProductName, versionInfo.ProductVersion.ToString());
+            Console.WriteLine("{0} [Version {1}]", versionInfo.ProductName, versionInfo.ProductVersion.ToString());
             Console.WriteLine("{0}", versionInfo.LegalCopyright);
             Console.WriteLine("");
         }
