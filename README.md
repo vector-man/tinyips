@@ -1,7 +1,8 @@
 About tinyIPS
 =============
-tinyIPS is a lightweight, cross-platform command-line IPS (International Patching System) patcher and creator.
+tinyIPS is a lightweight, cross-platform command-line IPS (International Patching System) patcher and creator. 
 
+The project page is located here: https://github.com/vector-man/tinyips
 
 About LibIPS.NET
 ================
