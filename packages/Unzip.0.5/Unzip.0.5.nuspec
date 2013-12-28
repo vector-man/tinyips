@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Unzip</id>
+    <version>0.5</version>
+    <title>Unzip</title>
+    <authors>yallie</authors>
+    <owners>yallie</owners>
+    <licenseUrl>https://github.com/yallie/unzip/raw/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/yallie/unzip</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tiny unzip helper class for .NET 3.5 Client Profile and Mono 2.10. This package is source-code only, it copies single Unzip.cs file to the Internals folder of your project.</description>
+    <releaseNotes>Added progress indicator event, merged refactorings contributed by Per Lundberg.</releaseNotes>
+    <copyright>Copyright 2012-2013 Alexey Yakovlev</copyright>
+    <language />
+    <tags>unzip decompression zip archive C# source</tags>
+  </metadata>
+</package>
