@@ -5,6 +5,8 @@ using System.Reflection;
 using System.Text;
 using System.Diagnostics;
 using CodeIsle.LibIpsNet;
+using System.IO;
+using System.Net;
 namespace TinyIps
 {
     class Program
@@ -21,6 +23,8 @@ namespace TinyIps
                 string option = string.Empty;
                 // Holds the path to the patch file.
                 string patch = string.Empty;
+                // Holds the path to the temporary patch file (used when patch is an HTTP URL).
+                string tempPatch = string.Empty;
                 // Holds the path to the target file to be patched.
                 string target = string.Empty;
                 // Holds the path to the original, unaltered file.
@@ -29,6 +33,7 @@ namespace TinyIps
                 string modified = string.Empty;
                 // Holds the path to the output file (te file to write to).
                 string output = string.Empty;
+
                 // If this fails, it is known that the argument length is invalid.
                 if ((args.Length > 4 || args.Length == 0))
                 {
@@ -44,11 +49,26 @@ namespace TinyIps
                     switch (option)
                     {
                         case "apply":
-                            // Looking for the format: apply patch target
+                            // Looking for the format: apply patch target.
                             if (args.Length >= 3)
                             {
                                 // Assign the path file.
                                 patch = args[1];
+                                // Test to see if a URI (http path to an IPS patch file) was entered.
+                                Uri result;
+                                // If patch is an HTTP path to an IPS
+                                if (Uri.TryCreate(patch, UriKind.Absolute, out result) && result.Scheme == Uri.UriSchemeHttp)
+                                {
+                                    using (WebClient client = new System.Net.WebClient())
+                                    {
+                                        // Create a temporary file.
+                                        tempPatch = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString());
+                                        // Downlolad the patch to the temporary patch file.
+                                        client.DownloadFile(result, tempPatch);
+                                        // Assign the temporary patch path to the patch.
+                                        patch = tempPatch;
+                                    }
+                                }
                                 // Assign the target file (this file is overwritten if output is not specified).
                                 target = args[2];
 
@@ -69,6 +89,15 @@ namespace TinyIps
                                 // Patch the file (output is where the patched file is created).
                                 patcher.Patch(patch, target, output);
 
+                                // Try to delete the tempPatch.
+                                try
+                                {
+                                    File.Delete(tempPatch);
+                                }
+                                catch
+                                {
+
+                                }
                                 return;
                             }
                             else
