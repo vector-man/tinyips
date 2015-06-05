@@ -1,5 +1,7 @@
 About tinyIPS
 =============
+
+[![Join the chat at https://gitter.im/vector-man/tinyips](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vector-man/tinyips?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 tinyIPS is a lightweight, cross-platform command-line IPS (International Patching System) patcher and creator. 
 
 The project page is located here: https://github.com/vector-man/tinyips
