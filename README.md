@@ -12,6 +12,10 @@ tinyIPS uses LibIPS.NET, a .NET library for 'International Patching System' (IPS
 
 LibIPS.NET's project page is located here: https://github.com/vector-man/LibIPS.NET (Please contribute changes to the library on this page.)
 
+Project status
+==============
+The project is still in testing phase and should not be used in production. If you find any issues, please report them or submit a pull request with bug fixes.
+
 Requirements
 ============
 Mono is 3.2.3 or .NET Framework 4.0.
