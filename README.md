@@ -8,7 +8,7 @@ The project page is located here: https://github.com/vector-man/tinyips
 
 About LibIPS.NET
 ================
-tinyIPS uses LibIPS.NET, a .NET library for 'International Patching System' (IPS) patches. It is based on the source code of 'flips,' that was originally created by Alcaro. You can read more about his version on this forum: http://www.smwcentral.net/?p=viewthread&t=61289
+tinyIPS uses LibIPS.NET, a .NET library for 'International Patching System' (IPS) patches. It is based on the source code of 'flips,' that was originally written in C++ and created by Alcaro. You can read more about his version on this forum: http://www.smwcentral.net/?p=viewthread&t=61289
 
 LibIPS.NET's project page is located here: https://github.com/vector-man/LibIPS.NET (Please contribute changes to the library on this page.)
 
