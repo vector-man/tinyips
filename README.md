@@ -36,9 +36,9 @@ Start by typing 'create' (without quotes), followed by the original (unaltered) 
 
 Copyright
 =========
-tinyIPS is licensed under GNU Lesser General Public License, version 3.0 or higher.  Copyright (c) 2013 CodeIsle.com.
+tinyIPS is licensed under GNU General Public License, version 3.0 or higher.  Copyright (c) 2013 - 2017 CodeIsle.com.
 
-LibIPS.NET is licensed under the GNU Lesser General Public License, version 3.0 or higher. Copyright (c) 2013 CodeIsle.com. Based on 'flips' Copyright (c) 2012 Alcaro. 
+LibIPS.NET is licensed under the GNU Lesser General Public License, version 3.0 or higher. Copyright (c) 2013 - 2017 CodeIsle.com. Based on 'flips' Copyright (c) 2012 - 2017 Alcaro. 
 
 Thanks
 ======
