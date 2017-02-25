@@ -184,7 +184,7 @@ namespace CodeIsle.LibIpsNet
                         {
                             while (offset + thislen - 1 < sourcelen && Reader.Read8(target, (offset + thislen - 1)) == (offset + thislen - 1 < sourcelen ? Reader.Read8(source, (offset + thislen - 1)) : 0)) thislen--;
                         }
-                        if (thislen > 3 && Compare(target, offset, target, (offset + 1), (thislen - 2)))
+                        if (thislen > 3 && Compare(target, offset, target, (offset + 1), (thislen - 1)))
                         {
                             Writer.Write24(offset, patch);
                             Writer.Write16(0, patch);
